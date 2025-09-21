@@ -1,5 +1,5 @@
 import Card from "./card";
-import Button from "./Button/button";
+import Button from "./button";
 
 const App = () => {
   return (
