@@ -1,5 +1,3 @@
-
-
 import PropTypes from 'prop-types';
 
 const Student = ({name = "unknown", age = 0, isStudent = false}) => {
@@ -29,7 +27,6 @@ Student.propTypes = {
     age: PropTypes.number.isRequired,
     isStudent: PropTypes.bool.isRequired,
 };
-<Student />
 
 // Student.defaultProps = {
 //     name: "Unknown",
