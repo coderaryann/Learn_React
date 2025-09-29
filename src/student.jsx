@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types';
 
-const Student = (props) => {
+const Student = ({name = "unknown", age = 0, isStudent = false}) => {
 
       const styles = {
         width: "150px",
@@ -17,9 +17,9 @@ const Student = (props) => {
 
     return (
         <div style={styles}>
-            <p style={pstyles}>Name: {props.name}</p>
-            <p style={pstyles}>Age: {props.age}</p>
-            <p style={pstyles}>Student: {props.isStudent ? "Yes" : "No"}</p>
+            <p style={pstyles}>Name: {name}</p>
+            <p style={pstyles}>Age: {age}</p>
+            <p style={pstyles}>Student: {isStudent ? "Yes" : "No"}</p>
         </div>
     );
 }
@@ -31,10 +31,10 @@ Student.propTypes = {
 };
 <Student />
 
-Student.defaultProps = {
-    name: "Unknown",
-    age: 0,
-    isStudent: false,
-};
+// Student.defaultProps = {
+//     name: "Unknown",
+//     age: 0,
+//     isStudent: false,
+// };
 
 export default Student;
